@@ -1,0 +1,62 @@
+[debug] [2022-09-08T18:59:20.116Z] ----------------------------------------------------------------------
+[debug] [2022-09-08T18:59:20.118Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Acer\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-09-08T18:59:20.118Z] CLI Version:   11.8.0
+[debug] [2022-09-08T18:59:20.119Z] Platform:      win32
+[debug] [2022-09-08T18:59:20.119Z] Node Version:  v16.16.0
+[debug] [2022-09-08T18:59:20.120Z] Time:          Thu Sep 08 2022 15:59:20 GMT-0300 (Horário Padrão de Brasília)
+[debug] [2022-09-08T18:59:20.120Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-09-08T18:59:20.188Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-09-08T18:59:20.188Z] > authorizing via signed-in user (leonardokraisch@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Acer\ReactNative\lambe
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-09-08T19:00:33.458Z] Using project from CLI flag: lambe-caaf9
+[debug] [2022-09-08T19:00:33.460Z] > refreshing access token with scopes: []
+[debug] [2022-09-08T19:00:33.464Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-09-08T19:00:33.464Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-09-08T19:00:33.713Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2022-09-08T19:00:33.714Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-09-08T19:00:33.728Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/lambe-caaf9 [none]
+[debug] [2022-09-08T19:00:34.132Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/lambe-caaf9 200
+[debug] [2022-09-08T19:00:34.132Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/lambe-caaf9 {"projectId":"lambe-caaf9","projectNumber":"1047689335552","displayName":"lambe","name":"projects/lambe-caaf9","resources":{"hostingSite":"lambe-caaf9","realtimeDatabaseInstance":"lambe-caaf9-default-rtdb","storageBucket":"lambe-caaf9.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_961b80b1-ee70-4d97-8ef1-10a116cc4558"}
+[info] i  Using project lambe-caaf9 (lambe) 
+[info] 
+=== Functions Setup
+[info] 
+[info] A functions directory will be created in your project with sample code
+[info] pre-configured. Functions can be deployed with firebase deploy.
+[info] 
+[debug] [2022-09-08T19:00:34.145Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-09-08T19:00:34.145Z] > authorizing via signed-in user (leonardokraisch@gmail.com)
+[debug] [2022-09-08T19:00:34.145Z] [iam] checking project lambe-caaf9 for permissions ["firebase.projects.get"]
+[debug] [2022-09-08T19:00:34.146Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/lambe-caaf9:testIamPermissions [none]
+[debug] [2022-09-08T19:00:34.146Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/lambe-caaf9:testIamPermissions x-goog-quota-user=projects/lambe-caaf9
+[debug] [2022-09-08T19:00:34.146Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/lambe-caaf9:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-09-08T19:00:35.060Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/lambe-caaf9:testIamPermissions 200
+[debug] [2022-09-08T19:00:35.060Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/lambe-caaf9:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-09-08T19:00:35.061Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/lambe-caaf9/services/cloudfunctions.googleapis.com [none]
+[debug] [2022-09-08T19:00:35.062Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/lambe-caaf9/services/runtimeconfig.googleapis.com [none]
+[debug] [2022-09-08T19:00:36.150Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/lambe-caaf9/services/cloudfunctions.googleapis.com 200
+[debug] [2022-09-08T19:00:36.151Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/lambe-caaf9/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2022-09-08T19:00:36.172Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/lambe-caaf9/services/runtimeconfig.googleapis.com 200
+[debug] [2022-09-08T19:00:36.172Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/lambe-caaf9/services/runtimeconfig.googleapis.com [omitted]
